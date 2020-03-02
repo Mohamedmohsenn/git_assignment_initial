@@ -6,7 +6,7 @@ public class SphereArea implements ISubscriber{
     
  public static void calcSphereArea(int raduis)        
     {
-        area =  4* Math.PI * Math.pow(raduis, 2);
+        area =  4* Math.PI * Math.pow(raduis, 2); //my equation
         area = Double.parseDouble(String.format("%.2f", area));
         System.out.println("The Area of the Sphere = " + area);
         
@@ -14,8 +14,8 @@ public class SphereArea implements ISubscriber{
 
     @Override
     public void notifySubscriber(String input) {
-        int raduis = Integer.parseInt(input);
-        calcSphereArea(raduis);
+        int raduis = Integer.parseInt(input); //casting
+        calcSphereArea(raduis); 
         
     }
 
