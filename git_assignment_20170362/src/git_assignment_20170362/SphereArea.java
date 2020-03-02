@@ -8,7 +8,7 @@ public class SphereArea implements ISubscriber{
     {
         area =  4* Math.PI * Math.pow(raduis, 2);
         area = Double.parseDouble(String.format("%.2f", area));
-        System.out.println("Aree of the Sphere = " + area);
+        System.out.println("The Area of the Sphere = " + area);
         
     }
 
